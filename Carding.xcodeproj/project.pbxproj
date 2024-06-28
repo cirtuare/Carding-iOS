@@ -21,6 +21,9 @@
 		746D2DCF2C2E4CEE006F7D6D /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 746D2DC62C2E4CEE006F7D6D /* Pretendard-Black.otf */; };
 		746D2DD02C2E4CEE006F7D6D /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 746D2DC72C2E4CEE006F7D6D /* Pretendard-Medium.otf */; };
 		746D2DD12C2E4CEE006F7D6D /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 746D2DC82C2E4CEE006F7D6D /* Pretendard-Light.otf */; };
+		746D2DD42C2E5192006F7D6D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 746D2DD32C2E5192006F7D6D /* SnapKit */; };
+		746D2DD62C2E5192006F7D6D /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 746D2DD52C2E5192006F7D6D /* SnapKit-Dynamic */; };
+		746D2DD92C2E519E006F7D6D /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 746D2DD82C2E519E006F7D6D /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746D2DD42C2E5192006F7D6D /* SnapKit in Frameworks */,
+				746D2DD92C2E519E006F7D6D /* Then in Frameworks */,
+				746D2DD62C2E5192006F7D6D /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +185,11 @@
 			dependencies = (
 			);
 			name = Carding;
+			packageProductDependencies = (
+				746D2DD32C2E5192006F7D6D /* SnapKit */,
+				746D2DD52C2E5192006F7D6D /* SnapKit-Dynamic */,
+				746D2DD82C2E519E006F7D6D /* Then */,
+			);
 			productName = Carding;
 			productReference = 746D2D9C2C2E4218006F7D6D /* Carding.app */;
 			productType = "com.apple.product-type.application";
@@ -207,6 +218,10 @@
 				Base,
 			);
 			mainGroup = 746D2D932C2E4218006F7D6D;
+			packageReferences = (
+				746D2DD22C2E5192006F7D6D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				746D2DD72C2E519E006F7D6D /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = 746D2D9D2C2E4218006F7D6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -457,6 +472,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		746D2DD22C2E5192006F7D6D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		746D2DD72C2E519E006F7D6D /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		746D2DD32C2E5192006F7D6D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746D2DD22C2E5192006F7D6D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		746D2DD52C2E5192006F7D6D /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746D2DD22C2E5192006F7D6D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		746D2DD82C2E519E006F7D6D /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 746D2DD72C2E519E006F7D6D /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 746D2D942C2E4218006F7D6D /* Project object */;
 }
