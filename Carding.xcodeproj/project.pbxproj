@@ -66,6 +66,7 @@
 		746D2DB32C2E479E006F7D6D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				746D2DBE2C2E4BEA006F7D6D /* Domain */,
 				746D2DB82C2E4AA1006F7D6D /* UI */,
 				746D2DB72C2E4A8C006F7D6D /* Presentation */,
 			);
@@ -75,7 +76,6 @@
 		746D2DB42C2E47B3006F7D6D /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				746D2DBD2C2E4B77006F7D6D /* Model */,
 				746D2DBC2C2E4B6F006F7D6D /* Extensions */,
 				746D2DB62C2E487D006F7D6D /* Settings */,
 				746D2DB52C2E4866006F7D6D /* Resources */,
@@ -121,11 +121,11 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		746D2DBD2C2E4B77006F7D6D /* Model */ = {
+		746D2DBE2C2E4BEA006F7D6D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
